@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="config.js"></script>
+</head>
+<body>
+    <div class="container">
+        <i class="upload-icon"><span class="fa fa-shopping-cart"></span></i>
+        <h1>Upload your product</h1>
+        <ul>
+            <li class="instruction">Files should be in jpg/jpeg format.</li>
+        </ul>
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" class="input" placeholder="Enter product name">
+
+        <label for="productPrice">Product Price:</label>
+        <input type="text" id="productPrice" class="input" placeholder="Enter product price">
+
+        <label for="productShortTitle">Product Short Title:</label>
+        <input type="text" id="productShortTitle" class="input" placeholder="Enter product short title">
+
+        <input id="fileInput" type="file" class="input" accept="image/jpeg, image/png, image/gif, video/mp4">
+        <button onclick="uploadProduct()" class="upload-btn">Upload</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
